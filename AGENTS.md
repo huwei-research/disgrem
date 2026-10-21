@@ -1,84 +1,29 @@
-# Public DisGRem Agent Instructions
+# DisGRem 项目工作说明
 
-## Scope and Inheritance
+本仓职责：软件发布。当前状态见[STATE.md](STATE.md)，用法与技术背景见[README.md](README.md)。
+在本工作区中，同时遵循[工作区说明](../../AGENTS.md)、[类别说明](../AGENTS.md)；需要命名、路径、版本或存储细节时查[公共规范](../../research_harness/policies/project_management.md)。独立克隆缺少这些外部文件时，以下项目事实和必要约定仍适用。
 
-- This file governs this project. Read the relevant README and applicable
-  subdirectory `AGENTS.md` files before editing.
-- In the standard `2026Projects/CATEGORY/PROJECT` layout, explicitly read
-  `../../AGENTS.md`, `../AGENTS.md`, and relevant `../../CONVENTIONS.md` sections.
-  They may sit outside automatic discovery at this independent Git root.
-- For a relocated checkout/worktree, locate the actual workspace first;
-  do not assume these relative counterpart paths still resolve.
-- In a standalone clone, this file and the README remain the local contract.
-  Ordinary setup/tests must not require private workspace files or siblings.
-- Paths below are project-relative unless explicitly marked otherwise.
-  Local facts and exceptions specialize shared defaults while retaining
-  research integrity, raw evidence, privacy, and independent Git boundaries.
-- Follow the user's current enabled-skill policy. Use relevant enabled skills
-  without a mandatory pipeline or automatic reactivation.
+## 科研方式
 
-## Project Identity
+探索优先。主动提出、推导、实现、比较和修正值得研究的想法，不能因为尚未证明或一次失败就提前放弃。必要时再依据证据、资源或当前目标缩小范围。使用标准数学语言和清楚自然的中文；正式结论准确说明依据，不编造证明、引用或实验。
+旧总路由、旧L0/L1、旧强制科研Skill和旧阶段执行指令不再作为现行流程。历史文件保留事实；已有工具按具体任务选用。
 
-This is the public MIT-licensed implementation of DisGRem, CeDisGRem, and
-AdaDisGRem for decentralized consensus optimization. It is tied to the paper
-but should remain a clean public code release.
+## 项目特定条件
 
-## Key Paths
+保留图连通性、光滑性、共识条件与理论/截断实现区别。既有run manifest和freeze contract继续维护来源记录。
 
-- Command-line entry: `codes/main.py`.
-- Proposed methods: `codes/solvers/disgrem/`.
-- Baselines: `codes/solvers/baselines/`.
-- Problems and data interfaces: `codes/problems/`.
-- Benchmarks: `codes/experiments/benchmarks/`.
-- Ablations: `codes/experiments/ablation/`.
-- Tests: `codes/tests/`.
+## 实际入口
 
-## Organization and Versioning
+- [codes/main.py](codes/main.py)
+- [codes/solvers/disgrem](codes/solvers/disgrem)
 
-- Retain `codes/main.py` as the CLI, with solver families, baselines,
-  problems, experiment drivers, and tests under their existing `codes/` paths.
-- Preserve runtime/development/locked dependency files and public registry
-  names. Git history records working changes; release versions identify API changes.
-- Local `codes/results/` outputs and reviewer artifacts are not part of the
-  code-only source release. Their separate freeze/reproduction contract remains
-  documented in the README and artifact tooling.
+## 检查与运行
 
-## Public Release Rules
+只读定位先查看相关文件与Git状态。按源码改动选择现有测试；freeze检查拒绝dirty/source mismatch，不默认重新发布。
+简单改字只核对相应内容，改图优先复用原始数据。数学推导检查实际证明责任；代码改动选择受影响测试，探索实验按当前科学问题组织。
 
-- Do not add private manuscript drafts, review material, or unpublished result
-  dumps.
-- Preserve the distinction between DisGRem, communication-efficient variants,
-  adaptive variants, and baselines.
-- Keep generated outputs under `codes/results/` out of commits unless the user
-  explicitly promotes them for release.
-- Maintain clean setup and test commands for outside users.
+## 命名、保存与边界
 
-## Verification
-
-Start each command block independently at the project root unless another
-working directory is stated. Run checks relevant to the changed artifact;
-instruction-only edits need reference and diff checks, not full experiments.
-
-```powershell
-cd codes
-python -m pytest tests
-python main.py regular
-```
-
-Use targeted benchmark or ablation scripts when changing solver behavior,
-communication schedules, graph generation, or adaptive regularization.
-
-## Research Rules
-
-- Claims about convergence, communication efficiency, and scalability must be
-  traceable to the paper or reproducible experiment scripts.
-- Do not weaken graph, smoothness, or consensus assumptions in prose or comments.
-
-## Git Policy
-
-- Inspect this repository/worktree's status and diff before staging named
-  task-related files; preserve unrelated user changes and sibling Git boundaries.
-- Commit this project's changes separately. Push only within the user's stated
-  scope after checking the actual remote, branch, visibility, and outgoing commits.
-- Do not publish private sources/results, rewrite history, or delete evidence
-  as a side effect of routine organization.
+名称表达科学含义和实际动作；按Python、MATLAB、Julia、C++各自惯例维护。已定义数学短符号和兼容API保留。清理路径或名称须同步调用、导入、配置和文档，不做跨文件盲替换。
+当前状态只在指定入口更新；证明、原始结果、分析图表和历史各有来源，入口链接而不重复维护。新运行记录执行源码、实际配置和输出目录；已有等价记录优先复用。
+本仓是独立保存边界；保护现有未提交工作、原始结果和冻结资产，不默认提交或推送。非Git原型按本地文件保存，不据此创建远端。

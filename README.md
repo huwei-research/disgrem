@@ -1,5 +1,10 @@
 # DisGRem
 
+<!-- research-harness-navigation -->
+当前入口：[项目说明](AGENTS.md) · [当前状态](STATE.md)。本仓承担“软件发布”职责。
+科研先充分探索，再根据实际需要调整范围；旧阶段安排和旧Harness流程不自动成为新任务。技术内容与历史证据见下文。
+<!-- /research-harness-navigation -->
+
 Reference implementation for the Distributed Gradient-Regularized Newton
 Method (DisGRem) and its communication-efficient and adaptive variants.
 
