@@ -175,9 +175,10 @@
   "scope": "managed software and documentation; existing legacy trees retained",
   "validation_report": "Research/disgrem/notes/public_audit_20261114/report.md",
   "source_version": "audit_20261114",
-  "source_snapshot_sha256": "41e6a63f950034fb3cf4ee8000f117a19c1b68b0e26c950c89be93fe99c8de58",
   "validation": {
     "numerical_core": "preserved from existing public HEAD",
-    "deferred_changes": "Research/disgrem/releases/publication_20261114/deferred_public_changes"
-  }
+    "deferred_changes": "Research/disgrem/releases/publication_20261114/deferred_public_changes",
+    "formal_cleanup_tests_passed": 22
+  },
+  "git_storage": "exact original bytes"
 }
