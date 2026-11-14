@@ -46,7 +46,11 @@ def load_dataset(name: str,
     """
     if data_dir is None:
         _pkg_root = Path(__file__).resolve().parent.parent.parent
-        data_dir = str(_pkg_root / "data")
+        research_data = _pkg_root.parent / "data" / "legacy"
+        data_dir = os.environ.get(
+            "DISGREM_DATA_DIR",
+            str(research_data if research_data.is_dir() else _pkg_root / "data"),
+        )
     os.makedirs(data_dir, exist_ok=True)
     name_l = name.lower()
 

@@ -1,0 +1,183 @@
+{
+  "project": "disgrem",
+  "source_root": "Research/disgrem",
+  "exported_at": "2026-11-14T21:46:32+08:00",
+  "local_only": true,
+  "status": "formal_cleanup",
+  "source_worktree_dirty": true,
+  "files": {
+    "codes/core/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "Research/disgrem/software/core/__init__.py"
+    },
+    "codes/solvers/CATALOG.md": {
+      "sha256": "b8d0f2568ba90a2aa679af928aa4e59faf9d64135b9e8ecc9fac1c65bcb53cf8",
+      "bytes": 541,
+      "source": "Research/disgrem/software/solvers/CATALOG.md"
+    },
+    "codes/solvers/__init__.py": {
+      "sha256": "66b64388c44350f37ad40bab045eb349424489e78e7512beed979fcdb7e13770",
+      "bytes": 16,
+      "source": "Research/disgrem/software/solvers/__init__.py"
+    },
+    "codes/solvers/baselines/diging.py": {
+      "sha256": "0cfe67135a56dc0ed52288325d4de701bc86a56fe221a0f682d0e8b02b34c8b5",
+      "bytes": 6028,
+      "source": "Research/disgrem/software/solvers/baselines/diging.py"
+    },
+    "codes/solvers/baselines/dis_qn.py": {
+      "sha256": "ab25afb630a3a61a68861873d029026f24c25b774e569ab85a17ecaffeb14e01",
+      "bytes": 6147,
+      "source": "Research/disgrem/software/solvers/baselines/dis_qn.py"
+    },
+    "codes/solvers/baselines/dqm.py": {
+      "sha256": "39c8c4720d9441caa442a721ddac5d6b67c19d4a937dc5e8fb046df162dab61f",
+      "bytes": 5676,
+      "source": "Research/disgrem/software/solvers/baselines/dqm.py"
+    },
+    "codes/solvers/baselines/esom.py": {
+      "sha256": "6266f8c72f714508f445f85126e8282c9ba86bec3d4f4a1421aba050cc273c21",
+      "bytes": 7647,
+      "source": "Research/disgrem/software/solvers/baselines/esom.py"
+    },
+    "codes/solvers/baselines/extra.py": {
+      "sha256": "2be2918376c4c7ca2b4c306bc9409ccfe8a9a5d8557f1381ed3d7a149836c067",
+      "bytes": 7281,
+      "source": "Research/disgrem/software/solvers/baselines/extra.py"
+    },
+    "codes/solvers/baselines/network_giant.py": {
+      "sha256": "7754b0d3f21c6d5f369154256395d6ba9386751ea00a01093b0d80eea3c4e6b5",
+      "bytes": 7741,
+      "source": "Research/disgrem/software/solvers/baselines/network_giant.py"
+    },
+    "codes/solvers/baselines/sonata.py": {
+      "sha256": "0efb7a4d47bebc890fe00bc80e34e0d3aed7f5a10fb1349b141285efe893fc28",
+      "bytes": 7441,
+      "source": "Research/disgrem/software/solvers/baselines/sonata.py"
+    },
+    "codes/solvers/baselines/__init__.py": {
+      "sha256": "254eb2b71cb4cea3ee24d55a215a8404d7ba316245c9db0e7de954e582469353",
+      "bytes": 20,
+      "source": "Research/disgrem/software/solvers/baselines/__init__.py"
+    },
+    "codes/solvers/disgrem/ada_disgrem.py": {
+      "sha256": "023ddebf1000105449e2604e49dfc2ec4af5a68c73205018abb24cb424c67d22",
+      "bytes": 552,
+      "source": "Research/disgrem/software/solvers/disgrem/ada_disgrem.py"
+    },
+    "codes/solvers/disgrem/ce_ada_disgrem.py": {
+      "sha256": "0e71043116e125fb198cabc3e02489696c321725bb1ee2a6aa7f676c4353eba6",
+      "bytes": 12663,
+      "source": "Research/disgrem/releases/publication_20261114/published_baseline/codes/solvers/disgrem/ce_ada_disgrem.py"
+    },
+    "codes/solvers/disgrem/ce_disgrem.py": {
+      "sha256": "02f8ba6fe1b57cd6c845b92b89ffd5fdec57721fcf5cee1808cb75118c6f8803",
+      "bytes": 14846,
+      "source": "Research/disgrem/releases/publication_20261114/published_baseline/codes/solvers/disgrem/ce_disgrem.py"
+    },
+    "codes/solvers/disgrem/disgrem.py": {
+      "sha256": "ea4da6ccb724a92ccacd0737a565d523f5a309570c858df0bf7aa82a3c939fff",
+      "bytes": 517,
+      "source": "Research/disgrem/software/solvers/disgrem/disgrem.py"
+    },
+    "codes/solvers/disgrem/dis_greqm.py": {
+      "sha256": "801452117d89a070bfbde7973f03adb2dcedf72ac971bfc676518a0e9c8a2dc1",
+      "bytes": 7040,
+      "source": "Research/disgrem/software/solvers/disgrem/dis_greqm.py"
+    },
+    "codes/solvers/disgrem/__init__.py": {
+      "sha256": "09b27137c145f5ca76784685f3527c03d4c6fde8345771ddafd3e05d97b96fff",
+      "bytes": 18,
+      "source": "Research/disgrem/software/solvers/disgrem/__init__.py"
+    },
+    "codes/utils/__init__.py": {
+      "sha256": "271f2198ae82d1281fbc6809025c493282094818af6c37257fd6bb8d16a8a966",
+      "bytes": 8,
+      "source": "Research/disgrem/software/utils/__init__.py"
+    },
+    "codes/utils/alg/alg_bank.py": {
+      "sha256": "a5c2cf16a68c599b8d14f619d64155dea1f51832a93e7aa6bb37687f5e44f842",
+      "bytes": 9202,
+      "source": "Research/disgrem/software/utils/alg/alg_bank.py"
+    },
+    "codes/utils/alg/__init__.py": {
+      "sha256": "3ebca71f1af6f59902271cdb60088ab2c7ea07f9cb63a91358e8c1d43dd49b41",
+      "bytes": 12,
+      "source": "Research/disgrem/software/utils/alg/__init__.py"
+    },
+    "codes/utils/data/load_dataset.py": {
+      "sha256": "663bebbe361074a6ae8c510407a16d57764d7ac1fa15baf98f417d93edb883c7",
+      "bytes": 5530,
+      "source": "Research/disgrem/software/utils/data/load_dataset.py"
+    },
+    "codes/utils/data/__init__.py": {
+      "sha256": "914509d9541b6f145bcdb000ea207f7c7f7243f458c37227f893b8877d0dd044",
+      "bytes": 13,
+      "source": "Research/disgrem/software/utils/data/__init__.py"
+    },
+    "codes/utils/export/log_export.py": {
+      "sha256": "57f3d6ab232affc0f9faa7de2c7753a88cf73e603073e00f8acdb2b06f3108c7",
+      "bytes": 10485,
+      "source": "Research/disgrem/software/utils/export/log_export.py"
+    },
+    "codes/utils/export/plot_utils.py": {
+      "sha256": "d86f52cc2361a3de5e829df3d983c99ed601bc3a1cfbc71ea08850b361192ce1",
+      "bytes": 138184,
+      "source": "Research/disgrem/software/utils/export/plot_utils.py"
+    },
+    "codes/utils/export/__init__.py": {
+      "sha256": "79ee335c80dd8a0b3aa52e985db7fbde3581db2359d933890da46ce20c517b47",
+      "bytes": 15,
+      "source": "Research/disgrem/software/utils/export/__init__.py"
+    },
+    "codes/utils/helper/compress.py": {
+      "sha256": "dc8673b214dc0f8a9792ce5fb78e6c26ec5cd3f144c5d65ff8a848bc8bd05ef0",
+      "bytes": 1613,
+      "source": "Research/disgrem/software/utils/helper/compress.py"
+    },
+    "codes/utils/helper/eval_utils.py": {
+      "sha256": "b3726a5b0e61893e540cb23cb4924d86757470f65d56af83d51b290272569919",
+      "bytes": 10478,
+      "source": "Research/disgrem/software/utils/helper/eval_utils.py"
+    },
+    "codes/utils/helper/graph.py": {
+      "sha256": "cb2dedca4fec5950124c1337a694f1562334122646fc63045a7f6c1758bbdadf",
+      "bytes": 8051,
+      "source": "Research/disgrem/software/utils/helper/graph.py"
+    },
+    "codes/utils/helper/log_utils.py": {
+      "sha256": "1346067f6c08dc9d4278c699d2af563931ab1974f56a4dbfeb851de94b21bcab",
+      "bytes": 4491,
+      "source": "Research/disgrem/software/utils/helper/log_utils.py"
+    },
+    "codes/utils/helper/run_utils.py": {
+      "sha256": "5c0293a089e63dafe9d6f461f804921f6ce174e8eb752832bd2974178c5e303a",
+      "bytes": 2547,
+      "source": "Research/disgrem/software/utils/helper/run_utils.py"
+    },
+    "codes/utils/helper/__init__.py": {
+      "sha256": "ec919e4578fe7ea0777b97fd864c209c3cd2ecba5ab6c385c7a08663e1ef2cc5",
+      "bytes": 15,
+      "source": "Research/disgrem/software/utils/helper/__init__.py"
+    },
+    "README.md": {
+      "sha256": "000f8dee1fa674c46bb0c486cd8810e7873d670a8d11f80dd292a24cc57f4a95",
+      "bytes": 5740,
+      "source": "Research/disgrem/software/docs/public_readme.md"
+    },
+    "codes/tests/test_smoke.py": {
+      "sha256": "19b3f5afaf7a0652d1021666d4c673093f199e33cc2ac9a7b6106457dde7c4d2",
+      "bytes": 3403,
+      "source": "Research/disgrem/experiments/legacy/tests/test_smoke.py"
+    }
+  },
+  "scope": "managed software and documentation; existing legacy trees retained",
+  "validation_report": "Research/disgrem/notes/public_audit_20261114/report.md",
+  "source_version": "audit_20261114",
+  "source_snapshot_sha256": "41e6a63f950034fb3cf4ee8000f117a19c1b68b0e26c950c89be93fe99c8de58",
+  "validation": {
+    "numerical_core": "preserved from existing public HEAD",
+    "deferred_changes": "Research/disgrem/releases/publication_20261114/deferred_public_changes"
+  }
+}

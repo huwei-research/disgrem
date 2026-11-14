@@ -83,10 +83,14 @@ def test_complete_graph_has_exact_consensus_matrix() -> None:
     assert spectral_gap(weights) == pytest.approx(1.0)
 
 
-def test_dataset_loader_reuses_immutable_arrays() -> None:
+def test_dataset_loader_reuses_immutable_arrays(tmp_path: Path) -> None:
+    # The cache contract is independent of the external LIBSVM download.
+    (tmp_path / "svmguide3.libsvm").write_text(
+        "1 1:1 2:0\n-1 1:0 2:2\n1 1:2 2:1\n", encoding="utf-8"
+    )
     load_dataset.cache_clear()
-    first = load_dataset("svmguide3", standardize="zscore", label_style="pm1")
-    second = load_dataset("svmguide3", standardize="zscore", label_style="pm1")
+    first = load_dataset("svmguide3", standardize="zscore", label_style="pm1", data_dir=str(tmp_path))
+    second = load_dataset("svmguide3", standardize="zscore", label_style="pm1", data_dir=str(tmp_path))
 
     assert first[0] is second[0]
     assert first[1] is second[1]

@@ -27,3 +27,31 @@
 名称表达科学含义和实际动作；按Python、MATLAB、Julia、C++各自惯例维护。已定义数学短符号和兼容API保留。清理路径或名称须同步调用、导入、配置和文档，不做跨文件盲替换。
 当前状态只在指定入口更新；证明、原始结果、分析图表和历史各有来源，入口链接而不重复维护。新运行记录执行源码、实际配置和输出目录；已有等价记录优先复用。
 本仓是独立保存边界；保护现有未提交工作、原始结果和冻结资产，不默认提交或推送。非Git原型按本地文件保存，不据此创建远端。
+
+## 主源与交付职责
+
+研究主源已完整归并至Research/disgrem；本仓保留交付及历史复现材料。持续修改先进入研究主源，历史Git与冻结文件保持。
+
+交付仓自己的状态文件只记录构建和交付事实；研究状态与科研日志沿用研究主源的指定入口。导出记录源码版本或内容摘要、未提交修改、输入数据标识、文件清单与验证结果。目录名和本条约定不构成发布授权。
+
+<!-- project-ownership -->
+```json
+{"maintenance": "delivery", "project_id": "disgrem", "source_root": "Research/disgrem", "status": "aligned"}
+```
+<!-- /project-ownership -->
+
+<!-- unified-project-layout -->
+## 统一目录职责
+
+遵循[三类目录统一规范](../../research_harness/policies/research_delivery_layout.md)；本仓实际职责和路径映射见[project_layout.json](project_layout.json)。研究状态与交付状态分别维护。导出必须比对独有修改、记录来源散列并独立验证；迁移完成前保持真实待归并状态。独立克隆缺少工作区规范时，继续遵循本文件已有的主源、资产保护及验证要求。
+<!-- /unified-project-layout -->
+
+<!-- manuscript-review-delivery -->
+## 文件组织与论文审阅交付
+
+- 文件归属和目标命名遵循[详细目录](../../research_harness/policies/project_file_catalog.md)。算法、实验、输入、原始运行、分析和精简数据各归其指定位置；现有路径迁移前保持真实映射，保留历史资产。
+- 论文按版本独立保存完整依赖，正文以章节组织；每轮论文交付从同版主源自动生成PDF、完整单文件review.tex、review.zip和source.zip，写入该版output，索引记录实际位置。
+- 单文件包含正文、附录、宏定义、图注、表格和实际文献条目；保留TeX语义，图件及样式随审阅包提供。生成稿不独立编辑，外部意见回写主源后重新生成。
+- 交付前核对内容与引用，并在隔离目录编译审阅包；记录源版本、格式、输入输出摘要、命令和实际验证结果。未生成或未验证的产物明确列为待完成。日常编辑不逐次打包，规则维护不触发论文改版。
+- 完整要求见[审阅交付规则](../../research_harness/policies/manuscript_review_delivery.md)。Publish只接收确定副本，Public保持软件职责；独立克隆缺少工作区规则时仍执行本节摘要。交付回复链接PDF和review.tex，按需链接两个压缩包。
+<!-- /manuscript-review-delivery -->

@@ -1,9 +1,6 @@
 # DisGRem
 
-<!-- research-harness-navigation -->
-当前入口：[项目说明](AGENTS.md) · [当前状态](STATE.md)。本仓承担“软件发布”职责。
-科研先充分探索，再根据实际需要调整范围；旧阶段安排和旧Harness流程不自动成为新任务。技术内容与历史证据见下文。
-<!-- /research-harness-navigation -->
+
 
 Reference implementation for the Distributed Gradient-Regularized Newton
 Method (DisGRem) and its communication-efficient and adaptive variants.
@@ -45,7 +42,7 @@ raw outputs used for manuscript verification.
 
 ## Setup
 
-Requires Python 3.10 or newer.
+The pinned runtime requirements require Python 3.11 or newer. The frozen lock file records a Python 3.12 environment.
 
 ```bash
 cd codes
@@ -154,3 +151,7 @@ Baselines include EXTRA, DIGing, DQM, ESOM, SONATA, NetworkGIANT, and DisQN.
 ## License
 
 This project is released under the MIT License. See `LICENSE`.
+
+## Maintained source and historical results
+
+The working source is Research/disgrem. The public codes layout remains independently runnable. The 2026-11-14 review corrected uncompressed Hessian communication accounting and mixing-rate cache validation. Earlier frozen communication-cost records retain their original values and need reanalysis before comparison with corrected runs; the fixed-round iterate updates are unchanged. Compressed communication costs remain model-based payload estimates, not measured network traffic.

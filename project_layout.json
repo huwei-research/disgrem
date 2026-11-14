@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "project_id": "disgrem",
+  "role": "delivery",
+  "source_root": "Research/disgrem",
+  "consolidation_status": "aligned",
+  "research_state": "Research/disgrem/STATE.md",
+  "research_log": "Research/disgrem/research_log.md",
+  "version_index": "Research/disgrem/paper/versions.json",
+  "entries": {
+    "paper_legacy": "Publish/disgrem_paper",
+    "software_legacy": "Public/disgrem"
+  },
+  "path_base": "workspace_root",
+  "policy": "research_harness/policies/research_delivery_layout.md",
+  "repositories": [
+    {
+      "path": "Research/disgrem",
+      "role": "研究与开发主仓",
+      "maintenance": "source"
+    },
+    {
+      "path": "Publish/disgrem_paper",
+      "role": "确定版本论文交付",
+      "maintenance": "delivery"
+    },
+    {
+      "path": "Public/disgrem",
+      "role": "软件交付与历史复现",
+      "maintenance": "delivery"
+    }
+  ]
+}
